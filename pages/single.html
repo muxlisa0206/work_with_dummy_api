@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="mt-[50px]">
+
+        <div class="container mx-auto px-[20px] gap-5 flex flex-col">
+            <div class="gap-[45px] flex">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-[24px] font-bold">React store</h1>
+                    <div class="flex flex-col gap-2">
+                        <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search product"
+                        class="px-2 py-2 max-w-[200px] border-[gray]/30 border-2"
+                        >
+                        <div class="flex items-center gap-2">
+                            <button class="px-2 py-2 border-2 border-[gray]/30 max-w-[96px] w-full cursor-pointer">Min</button>
+                            <button class="px-2 py-2 border-2 border-[gray]/30 max-w-[96px] w-full cursor-pointer">Max</button>
+                        </div>
+                    </div>
+                        <div>
+                            <h2 class="text-lg font-semibold mb-3">Categories</h2>
+                            <div class="space-y-3">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category" class="size-4">
+                                    <span class="text-[16px]">BEAUTY</span>
+                                </label>
+                    
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category" class="size-4">
+                                    <span class="text-[16px]">FRAGRANCES</span>
+                                </label>
+                    
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category" class="size-4">
+                                    <span class="text-[16px]">FURNITURE</span>
+                                </label>
+                    
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="category" class="size-4">
+                                    <span class="text-[16px]">GROCERIES</span>
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="max-w-[200px]">
+                            <h2 class="text-lg font-semibold mb-3">Keywords</h2>
+                    
+                            <div class="space-y-3">
+                                <div class="border-2 border-[gray]/30 px-4 py-3 rounded-md cursor-pointer">APPLE</div>
+                                <div class="border-2 border-[gray]/30 px-4 py-3 rounded-md cursor-pointer">WATCH</div>
+                                <div class="border-2 border-[gray]/30 px-4 py-3 rounded-md cursor-pointer">FASHION</div>
+                                <div class="border-2 border-[gray]/30 px-4 py-3 rounded-md cursor-pointer">TREND</div>
+                                <div class="border-2 border-[gray]/30 px-4 py-3 rounded-md cursor-pointer">SHOES</div>
+                                <div class="border-2 border-[gray]/30 px-4 py-3 rounded-md cursor-pointer">SHIRT</div>
+                            </div>
+                        </div>
+                    
+                        <button class="max-w-[200px] w-full bg-black text-white py-3 rounded-md text-[16px] font-medium cursor-pointer">
+                            Reset Filters
+                        </button>
+                </div>
+    
+                <div class="flex flex-col gap-2">
+                    <a href="/index.html" class="rounded-[30px] bg-black cursor-pointer text-white max-w-[75px] w-full px-[20px] py-2">Back</a>
+                    <div id="singleProducts" class="flex flex-col gap-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[300px] flex flex-col gap-6">
+
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                  <h3 class="text-lg font-semibold mb-4">Top Sellers</h3>
+            
+                  <!-- Seller Item -->
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=1" alt="" class="w-10 h-10 rounded-full mr-3">
+                      <span class="font-medium text-gray-800">Erik Brix</span>
+                    </div>
+                    <button class="bg-black text-white text-sm px-3 py-1 rounded-md hover:bg-gray-800 transition">Follow</button>
+                  </div>
+            
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=2" alt="" class="w-10 h-10 rounded-full mr-3">
+                      <span class="font-medium text-gray-800">Anna Madsen</span>
+                    </div>
+                    <button class="bg-black text-white text-sm px-3 py-1 rounded-md hover:bg-gray-800 transition">Follow</button>
+                  </div>
+            
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=3" alt="" class="w-10 h-10 rounded-full mr-3">
+                      <span class="font-medium text-gray-800">Victoria Kristensen</span>
+                    </div>
+                    <button class="bg-black text-white text-sm px-3 py-1 rounded-md hover:bg-gray-800 transition">Follow</button>
+                  </div>
+            
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=4" alt="" class="w-10 h-10 rounded-full mr-3">
+                      <span class="font-medium text-gray-800">Gregorio Fuentes</span>
+                    </div>
+                    <button class="bg-black text-white text-sm px-3 py-1 rounded-md hover:bg-gray-800 transition">Follow</button>
+                  </div>
+            
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                      <img src="https://i.pravatar.cc/40?img=5" alt="" class="w-10 h-10 rounded-full mr-3">
+                      <span class="font-medium text-gray-800">Alcindo Pinto</span>
+                    </div>
+                    <button class="bg-black text-white text-sm px-3 py-1 rounded-md hover:bg-gray-800 transition">Follow</button>
+                  </div>
+                </div>
+            
+                <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                  <h3 class="text-lg font-semibold mb-4">Popular Blogs</h3>
+            
+                  <div class="mb-4">
+                    <h4 class="font-semibold text-gray-800">My Amazing Blog Title 1</h4>
+                    <p class="text-gray-500 text-sm mb-2">Publish by Jordan</p>
+                    <div class="flex gap-4 text-gray-500 text-sm">
+                      <span><i class="far fa-comment mr-1"></i>142</span>
+                      <span><i class="far fa-heart mr-1"></i>44</span>
+                    </div>
+                  </div>
+            
+                  <div class="mb-4">
+                    <h4 class="font-semibold text-gray-800">My Amazing Blog Title 2</h4>
+                    <p class="text-gray-500 text-sm mb-2">Publish by John</p>
+                    <div class="flex gap-4 text-gray-500 text-sm">
+                      <span><i class="far fa-comment mr-1"></i>153</span>
+                      <span><i class="far fa-heart mr-1"></i>25</span>
+                    </div>
+                  </div>
+            
+                  <div>
+                    <h4 class="font-semibold text-gray-800">My Amazing Blog Title 3</h4>
+                    <p class="text-gray-500 text-sm mb-2">Publish by HuXn</p>
+                    <div class="flex gap-4 text-gray-500 text-sm">
+                      <span><i class="far fa-comment mr-1"></i>50</span>
+                      <span><i class="far fa-heart mr-1"></i>14</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </main>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/single.js"></script>
+</body>
+</html>
